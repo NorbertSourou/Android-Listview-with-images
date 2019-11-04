@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/adapterimage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/che"
+        app:civ_border_color="#B88E8E"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adaptertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:text="Nom" />
+
+        <TextView
+            android:id="@+id/adaptertextview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:text="Prénom : " />
+
+        <TextView
+            android:id="@+id/adaptertextview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:text="Contact : " />
+
+        <TextView
+            android:id="@+id/adaptertextview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="2dp"
+            android:paddingBottom="3dp"
+            android:text="Email : " />
+    </LinearLayout>
+</LinearLayout>
