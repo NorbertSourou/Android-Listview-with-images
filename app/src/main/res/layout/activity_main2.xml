@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="100"
     tools:context=".Main2Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="Activity"
+        app:titleTextColor="@android:color/white" />
 
     <ImageView
         android:id="@+id/photo"
@@ -14,7 +24,7 @@
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:maxHeight="300dp"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         android:src="@drawable/che" />
 
     <TextView
@@ -27,7 +37,9 @@
         android:layout_marginEnd="20dp"
         android:drawableStart="@drawable/ic_person_black_24dp"
         android:drawablePadding="12dp"
-        android:text="Nom" />
+        android:text="Nom"
+        android:textStyle="italic"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/prenom"

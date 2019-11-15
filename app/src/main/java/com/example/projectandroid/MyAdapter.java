@@ -11,19 +11,22 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MyAdapter extends BaseAdapter {
+
     Context context;
     ArrayList<MyItem> listforview;
     LayoutInflater inflator = null;
     View v;
     ViewHolder vholder;
-
     public MyAdapter(Context con, ArrayList<MyItem> list) {
         super();
         context = con;
         listforview = list;
         inflator = LayoutInflater.from(con);
     }
+    public void addItem(String item){
 
+        notifyDataSetChanged();
+    }
     @Override
     public long getItemId(int position) {
         return position;

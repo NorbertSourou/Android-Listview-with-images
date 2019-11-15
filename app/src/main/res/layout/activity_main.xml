@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="#EED7D7"
-        android:dividerHeight="0.001dp" />
+        android:dividerHeight="0.0001dp" />
     <!-- android:dividerHeight="0.001dp"-->
 
 </LinearLayout>

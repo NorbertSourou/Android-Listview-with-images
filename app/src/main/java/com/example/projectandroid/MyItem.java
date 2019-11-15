@@ -1,8 +1,11 @@
 package com.example.projectandroid;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.io.Serializable;
 
-public class MyItem implements Serializable {
+public class MyItem  implements Serializable {
     private int imageid;
     private String nom = "";
     private String prenom = "";
@@ -15,6 +18,13 @@ public class MyItem implements Serializable {
         this.prenom = prenom;
         this.contact = contact;
         this.email = email;
+    }
+
+    public MyItem() {
+    }
+
+    public MyItem(String nom) {
+        this.nom = nom;
     }
 
     public int getImageid() {

@@ -1,11 +1,7 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:innerRadius="0dp"
-    android:shape="ring"
-    android:thicknessRatio="1.9"
-    android:useLevel="false" >
-<solid android:color="@android:color/transparent" />
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-<stroke
-android:width="10dp"
-android:color="@android:color/white" />
-    </shape>
+    <gradient
+        android:endColor="#9b0493"
+        android:startColor="#38068f"
+           android:type="linear"/>
+</shape>
