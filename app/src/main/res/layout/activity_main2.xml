@@ -20,12 +20,11 @@
     <ImageView
         android:id="@+id/photo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
-        android:maxHeight="300dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/che" />
+        android:scaleType="fitXY"
+        android:src="@drawable/an" />
 
     <TextView
         android:id="@+id/nom"
