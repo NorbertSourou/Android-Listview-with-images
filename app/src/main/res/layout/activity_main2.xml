@@ -15,7 +15,7 @@
         android:background="@android:color/transparent"
         app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
         app:title="Activity"
-        app:titleTextColor="@android:color/white" />
+        app:titleTextColor="@android:color/transparent" />
 
     <ImageView
         android:id="@+id/photo"

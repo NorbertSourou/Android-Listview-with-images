@@ -19,6 +19,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:tag="+229"
                 android:id="@+id/lastphoto"
                 android:layout_width="240dp"
                 android:layout_height="120dp"
@@ -70,8 +71,9 @@
                 android:drawableStart="@drawable/call"
                 android:drawablePadding="12dp"
                 android:ems="10"
-                android:hint="Input your number"
-                android:inputType="number"
+                android:hint="+229"
+                android:inputType="phone"
+                android:maxLength="8"
                 android:padding="15dp"
                 android:textColor="#fff"
                 android:textColorHint="#df546e" />

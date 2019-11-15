@@ -37,7 +37,7 @@ public class edit extends AppCompatActivity {
         lastbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (lastname.getText().toString().isEmpty() || lastsurname.getText().toString().isEmpty() || lastcontact.getText().toString().isEmpty() || lastmail.getText().toString().isEmpty()) {
+                if (lastname.getText().toString().isEmpty() || lastsurname.getText().toString().isEmpty() || lastcontact.getText().toString().isEmpty() || lastmail.getText().toString().isEmpty() ||lastcontact.getText().toString().length()<8) {
                     Toast.makeText(edit.this, "Entrer les valeurs", Toast.LENGTH_SHORT).show();
 
                 } else {
