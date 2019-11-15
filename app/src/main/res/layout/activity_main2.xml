@@ -37,6 +37,7 @@
         android:drawableStart="@drawable/ic_person_black_24dp"
         android:drawablePadding="12dp"
         android:text="Nom"
+        android:textSize="17sp"
         android:textStyle="italic"
         android:typeface="serif" />
 
@@ -49,7 +50,9 @@
         android:layout_marginEnd="20dp"
         android:drawableStart="@drawable/ic_person_black_24dp"
         android:drawablePadding="12dp"
-        android:text="Prenom" />
+        android:text="Prenom"
+        android:textSize="17sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/contact"
@@ -61,7 +64,9 @@
         android:layout_marginEnd="20dp"
         android:drawableStart="@drawable/ic_call_black_24dp"
         android:drawablePadding="12dp"
-        android:text="Contact" />
+        android:text="Contact"
+        android:textSize="17sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/mail"
@@ -73,5 +78,7 @@
         android:layout_marginEnd="20dp"
         android:drawableStart="@drawable/ic_email_black_24dp"
         android:drawablePadding="12dp"
-        android:text="Contact" />
+        android:text="Email"
+        android:textSize="17sp"
+        android:textStyle="italic" />
 </LinearLayout>
