@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
+        android:elevation="12dp"
         app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
         app:title="Activity"
         app:titleTextColor="@android:color/transparent" />

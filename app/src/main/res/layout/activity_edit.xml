@@ -19,7 +19,6 @@
             android:orientation="vertical">
 
             <ImageView
-                android:tag="+229"
                 android:id="@+id/lastphoto"
                 android:layout_width="240dp"
                 android:layout_height="120dp"
@@ -30,7 +29,8 @@
                 android:maxHeight="300dp"
                 android:padding="16dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/che" />
+                android:src="@drawable/che"
+                android:tag="+229" />
 
             <EditText
                 android:id="@+id/lastname"
@@ -100,10 +100,10 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/custum"
-                android:paddingBottom="16dp"
-                android:paddingTop="16dp"
                 android:paddingStart="100dp"
+                android:paddingTop="16dp"
                 android:paddingEnd="100dp"
+                android:paddingBottom="16dp"
 
                 android:text="Valider" />
         </LinearLayout>

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     int[] photo = {R.drawable.an, R.drawable.ana, R.drawable.arc, R.drawable.che, R.drawable.chi,};
     int[] vrai_image = new int[40];
     MyItem recuper;
-      MyAdapter adapter;
+    MyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             myitems.add(new MyItem(vrai_image[i], names[i], prenom[i], contact[i], email[i]));
         }
 
-      adapter = new MyAdapter(MainActivity.this, myitems);
+        adapter = new MyAdapter(MainActivity.this, myitems);
         //adapter.notifyDataSetChanged();
         mainactivity.setAdapter(adapter);
 
@@ -73,16 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 recuper.setPrenom(tab[1]);
                 recuper.setContact(tab[2]);
                 recuper.setEmail(tab[3]);
-               adapter.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
             }
         }
-      /*  if (requestCode == CHOIX) {
-            if (resultCode == RESULT_OK) {
-                String[] cadre = data.getStringArrayExtra("pro");
-                myitems.add(new MyItem(cadre[0], cadre[1], cadre[2], table[(int) (Math.random() * (table.length - var))]));
-
-            }
-        }*/
         super.onActivityResult(requestCode, resultCode, data);
     }
 }

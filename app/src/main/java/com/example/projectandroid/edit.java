@@ -37,15 +37,15 @@ public class edit extends AppCompatActivity {
         lastbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (lastname.getText().toString().isEmpty() || lastsurname.getText().toString().isEmpty() || lastcontact.getText().toString().isEmpty() || lastmail.getText().toString().isEmpty() ||lastcontact.getText().toString().length()<8) {
+                if (lastname.getText().toString().trim().isEmpty() || lastsurname.getText().toString().trim().isEmpty() || lastcontact.getText().toString().trim().isEmpty() || lastmail.getText().toString().trim().isEmpty() || lastcontact.getText().toString().trim().length() < 8) {
                     Toast.makeText(edit.this, "Entrer les valeurs", Toast.LENGTH_SHORT).show();
 
                 } else {
                     String mot1, mot2, mot3, mot4;
-                    mot1 = lastname.getText().toString();
-                    mot2 = lastsurname.getText().toString();
-                    mot3 = lastcontact.getText().toString();
-                    mot4 = lastmail.getText().toString();
+                    mot1 = lastname.getText().toString().trim();
+                    mot2 = lastsurname.getText().toString().trim();
+                    mot3 = lastcontact.getText().toString().trim();
+                    mot4 = lastmail.getText().toString().trim();
                     String[] table = {mot1, mot2, mot3, mot4};
                     Intent result = new Intent();
                     result.putExtra("moi", table);
